@@ -1,0 +1,27 @@
+
+
+print("=== Travel Itinerary Planner ===")
+
+
+destinations = []
+for i in range(1, 6):
+    place = input(f"Enter destination {i}: ")
+    destinations.append(place)
+
+print("Your original travel destinations:")
+print(destinations)
+
+
+print("Update Destinations")
+new_second = input("Enter a new destination for the 2nd place: ")
+new_fifth = input("Enter a new destination for the 5th place: ")
+
+
+destinations[1] = new_second     
+destinations[4] = new_fifth      
+
+
+print("Updated Travel Destinations:")
+print(destinations)
+
+print("Your itinerary has been successfully updated")
